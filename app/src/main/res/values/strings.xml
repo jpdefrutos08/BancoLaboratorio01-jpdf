@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BancoLaboratorio01</string>
+
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="cuil_cuit">Cuil / Cuit</string>
+    <string name="Monto">Monto a invertir</string>
+    <string name="dias_seleccionados">Días seleccionados</string>
+    <string name="cant_dias">Cantidad de dìas</string>
+    <string name="Rendimiento">Rendimiento</string>
+
+    <string name="BotonRenovacion">Botón Renovación</string>
+    <string name="CheckRenovacion">Check Renovación</string>
+
+    <string name="moneda">Moneda</string>
+
+    <string name="dolar_">Dolar</string>
+    <string name="peso_argentino">Peso Argentino</string>
+    <string name="monto_a_invertir">Monto a invertir</string>
+    <string name="mostrar_interes">Mostrar interes</string>
+    <string name="aceptar_terminos_y_condiciones">Aceptar términos y condiciones</string>
+    <string name="hacer_plazo_fijo">Hacer plazo fijo</string>
+
+    <string name="avisar_por_mail_antes_de_vencimiento">Avisar por mail antes de vencimiento</string>
+    <string name="acreditar_en_cuenta">Acreditar en cuenta</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="info_final">Información final</string>
+
+
+
+</resources>
