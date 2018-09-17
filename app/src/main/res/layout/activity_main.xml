@@ -8,17 +8,18 @@
 
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/idCorreoElectronico"
         android:layout_width="479dp"
-        android:layout_height="61dp"
+        android:layout_height="wrap_content"
         android:text="@string/correo_electronico"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/idIngCorreoElectronico"
         android:layout_width="478dp"
-        android:layout_height="wrap_content"
+        android:layout_height="22dp"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -27,12 +28,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cuil_cuit"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/idIngCuilCuit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="21dp"
         android:ems="10"
         android:inputType="numberSigned" />
 
@@ -41,26 +42,29 @@
         android:layout_width="332dp"
         android:layout_height="wrap_content"
         android:text="@string/moneda"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <RadioGroup
         android:id="@+id/idGroupMoneda"
+        android:orientation="horizontal"
         android:layout_width="566dp"
         android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/idDolar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/dolar_" />
 
         <RadioButton
-            android:id="@+id/idPesoArgentino"
+            android:id="@+id/idDolar"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dolar_"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/idPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/peso_argentino" />
+            android:text="@string/peso_argentino"
+            android:textSize="12sp" />
     </RadioGroup>
 
     <TextView
@@ -68,33 +72,35 @@
         android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:text="@string/monto_a_invertir"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/idIngMontoAinvertir"
         android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberSigned" />
+        android:inputType="numberSigned"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/idDias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cant_dias"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <SeekBar
         android:id="@+id/idIngDias"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="33dp"
         android:layout_weight="1" />
 
     <TextView
         android:id="@+id/idMostrarDias"
         android:layout_width="362dp"
         android:layout_height="36dp"
-        android:text="@string/dias_seleccionados" />
+        android:text="@string/dias_seleccionados"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/idMostrarInteres"
@@ -105,7 +111,7 @@
     <LinearLayout
         android:id="@+id/idContenedorAvisar"
         android:layout_width="569dp"
-        android:layout_height="77dp"
+        android:layout_height="106dp"
         android:orientation="vertical">
 
         <TextView
@@ -114,24 +120,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/avisar_por_mail_antes_de_vencimiento"
-            android:textSize="24sp" />
+            android:textSize="14sp" />
 
         <SeekBar
             android:id="@+id/idIngAvisarPorMail"
-            android:layout_width="wrap_content"
+            android:layout_width="76dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:max="180"
-            android:progress="10"/>
+            android:progress="10" />
 
         <ToggleButton
             android:id="@+id/idAcreditarEnCuenta"
-            android:layout_width="428dp"
-            android:layout_height="wrap_content"
+            android:layout_width="230dp"
+            android:layout_height="34dp"
             android:layout_weight="1"
             android:text="@string/acreditar_en_cuenta"
-            android:textOn="@string/BotonRenovacion"
-            android:textOff="@string/acreditar_en_cuenta"/>
+            android:textOff="@string/acreditar_en_cuenta"
+            android:textOn="@string/BotonRenovacion" />
 
     </LinearLayout>
 
@@ -150,15 +156,15 @@
 
     <Button
         android:id="@+id/idHacerPlazoFijo"
-        android:layout_width="209dp"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="34dp"
         android:text="@string/hacer_plazo_fijo" />
 
 
     <TextView
         android:id="@+id/idInfoFinal"
         android:layout_width="568dp"
-        android:layout_height="111dp"
+        android:layout_height="100dp"
         android:layout_weight="1"
         android:maxLines="6"
         android:text="@string/info_final" />

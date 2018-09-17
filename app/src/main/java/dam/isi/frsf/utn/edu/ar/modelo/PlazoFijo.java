@@ -116,13 +116,16 @@ public class PlazoFijo {
         }
 
         return 0.0;
-
     }
 
     public Double intereses() {
-        return 0.0;
+        Double interes;
+        Double total;
+        //total = monto + monto*(Math.pow(tasas[],1)); ESTA ES LA CORRECTA. USO LINEA DE ABAJO PARA NO FRENARME
+        total = monto + monto*(Math.pow(0.3,1));
+        interes = (total - monto)*(dias/30);
 
+        return interes;
     }
 }
-
 
